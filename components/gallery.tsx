@@ -13,32 +13,32 @@ export default function Gallery() {
 
   const galleryImages = [
     {
-      src: "/images/junk-pros-logo.png",
+      src: "https://i.pinimg.com/736x/03/c6/a5/03c6a5b1ad25adb09c027092955d92ee.jpg",
       alt: "Before and after garage cleanout",
       title: "Garage Cleanout",
     },
     {
-      src: "/images/junk-pros-logo.png",
+      src: "https://i.pinimg.com/1200x/f8/9f/c2/f89fc2a1a25c1e26364b2f4a67886813.jpg",
       alt: "Professional junk removal service",
       title: "Furniture Removal",
     },
     {
-      src: "/images/junk-pros-logo.png",
+      src: "https://i.pinimg.com/1200x/34/d5/aa/34d5aaed9aa4ec885f80c3c9476a910e.jpg",
       alt: "Commercial office cleanout",
       title: "Office Cleanout",
     },
     {
-      src: "/images/junk-pros-logo.png",
+      src: "https://i.pinimg.com/1200x/75/82/93/75829322e2b12e207d348df570abf773.jpg",
       alt: "Appliance removal and recycling",
       title: "Appliance Disposal",
     },
     {
-      src: "/images/junk-pros-logo.png",
+      src: "https://i.pinimg.com/1200x/d5/d7/30/d5d730602ff151a499733a92fd742414.jpg",
       alt: "Construction debris removal",
       title: "Construction Cleanup",
     },
     {
-      src: "/images/junk-pros-logo.png",
+      src: "https://i.pinimg.com/736x/03/c6/a5/03c6a5b1ad25adb09c027092955d92ee.jpg",
       alt: "Estate cleanout service",
       title: "Estate Cleanout",
     },
