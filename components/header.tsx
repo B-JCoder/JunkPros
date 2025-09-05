@@ -32,7 +32,7 @@ export default function Header() {
             className="flex items-center space-x-2 cursor-pointer"
           >
             <Image
-              src="/images/junk-pros-logo.png"
+              src="/images/twoguyslogo.jpg"
               alt="Junk Pros Logo"
               width={120}
               height={60}
