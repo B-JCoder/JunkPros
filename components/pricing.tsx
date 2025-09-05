@@ -62,12 +62,12 @@ export default function Pricing() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#0A5C36] font-bold mb-6">
             Transparent <span className="text-[#0A5C36]">Pricing</span>
           </h2>
-          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto">
-            No hidden fees, no surprises. Pricing is based on the volume of junk we remove — 
-            and you’ll always get a free estimate before we start.
+          <p className="text-lg md:text-xl  max-w-2xl mx-auto text-[#FFF]">
+            No hidden fees, no surprises. Pricing is based on the volume of junk we remove — and you’ll always get a
+            free estimate before we start.
           </p>
         </div>
 
@@ -77,9 +77,7 @@ export default function Pricing() {
             <Card
               key={index}
               className={`relative rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 ${
-                plan.popular
-                  ? "border-2 border-[#0A5C36] bg-white"
-                  : "border border-gray-200 bg-white"
+                plan.popular ? "border-2 border-[#0A5C36] bg-white" : "border border-gray-200 bg-white"
               }`}
             >
               {plan.popular && (
@@ -126,8 +124,8 @@ export default function Pricing() {
                 Need a <span className="text-[#0A5C36]">Custom Quote?</span>
               </h3>
               <p className="text-gray-600 mb-6">
-                Every job is unique. We provide free, no-obligation estimates. 
-                Pricing includes labor, disposal fees, and cleanup — no hidden costs.
+                Every job is unique. We provide free, no-obligation estimates. Pricing includes labor, disposal fees,
+                and cleanup — no hidden costs.
               </p>
               <ul className="space-y-2 text-sm">
                 {[
@@ -150,7 +148,10 @@ export default function Pricing() {
               </div>
               <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
                 <a href="tel:7734301854" className="flex-1">
-                  <Button size="lg" className="w-full bg-[#0A5C36] hover:bg-[#14452f] text-white rounded-full shadow-md">
+                  <Button
+                    size="lg"
+                    className="w-full bg-[#0A5C36] hover:bg-[#14452f] text-white rounded-full shadow-md"
+                  >
                     <Phone className="mr-2 h-5 w-5" />
                     Call (773) 430-1854
                   </Button>
@@ -159,7 +160,7 @@ export default function Pricing() {
                   onClick={scrollToContact}
                   variant="outline"
                   size="lg"
-                  className="flex-1 border-[#0A5C36] text-[#0A5C36] hover:bg-[#0A5C36] hover:text-white rounded-full shadow-md"
+                  className="flex-1 border-[#0A5C36] text-[#0A5C36] hover:bg-[#0A5C36] hover:text-white rounded-full shadow-md bg-transparent"
                 >
                   Request Quote Online
                 </Button>

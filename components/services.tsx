@@ -56,22 +56,19 @@ export default function Services() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance mb-6">
+          <h2 className="text-3xl md:text-4xl text-[#0A5C36] lg:text-5xl font-bold text-balance mb-6">
             Our <span className="text-[#0A5C36]">Services</span>
           </h2>
-          <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto">
-            From single-item pickup to complete property cleanouts, we handle junk removal, 
-            furniture delivery, and yard waste disposal with professional care.
+          <p className="text-lg md:text-xl  text-[#fff] max-w-3xl mx-auto">
+            From single-item pickup to complete property cleanouts, we handle junk removal, furniture delivery, and yard
+            waste disposal with professional care.
           </p>
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
-            <Card
-              key={index}
-              className="rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
-            >
+            <Card key={index} className="rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <div className="bg-[#0A5C36]/10 rounded-full w-14 h-14 flex items-center justify-center mb-4">
                   <service.icon className="h-7 w-7 text-[#0A5C36]" />
@@ -101,9 +98,7 @@ export default function Services() {
 
         {/* CTA Section */}
         <div className="bg-[#0A5C36]/10 rounded-2xl p-10 md:p-14 text-center shadow-inner">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#14452f]">
-            Don’t See Your Item Listed?
-          </h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#14452f]">Don’t See Your Item Listed?</h3>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             We handle almost everything! Contact us for a free consultation about your specific junk removal needs.
           </p>
@@ -119,7 +114,7 @@ export default function Services() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-[#0A5C36] text-[#0A5C36] hover:bg-[#0A5C36] hover:text-white rounded-full shadow-md"
+                className="border-[#0A5C36] text-[#0A5C36] hover:bg-[#0A5C36] hover:text-white rounded-full shadow-md bg-transparent"
               >
                 Call Now: (773) 430-1854
               </Button>

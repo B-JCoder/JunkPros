@@ -45,18 +45,15 @@ export default function Gallery() {
   ]
 
   return (
-    <section
-      id="gallery"
-      className="relative py-20 md:py-28 bg-gradient-to-r from-primary/90 to-primary text-primary-foreground"
-    >
+    <section id="gallery" className="relative py-20 md:py-28 bg-[#14452f] text-white">
       {/* Overlay Pattern */}
       <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10 pointer-events-none" />
 
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance mb-6">
-            See Our Work in <span className="text-white">Action</span>
+          <h2 className="text-3xl md:text-4xl  lg:text-5xl font-bold mb-6">
+            See Our Work in <span className="text-[#fff]">Action</span>
           </h2>
           <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
             Take a look at some of our recent junk removal projects. From small cleanouts to major property
@@ -69,7 +66,7 @@ export default function Gallery() {
           {galleryImages.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur hover:shadow-xl transition-all"
+              className="group relative overflow-hidden rounded-2xl bg-white text-[#0A5C36] hover:shadow-xl transition-all"
             >
               <div className="aspect-[4/3] relative">
                 <Image
@@ -79,7 +76,7 @@ export default function Gallery() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-[#0A5C36]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-white text-center px-4">
                     <h3 className="text-lg font-semibold">{image.title}</h3>
                   </div>
@@ -99,7 +96,7 @@ export default function Gallery() {
           <Button
             onClick={scrollToContact}
             size="lg"
-            className="bg-white text-primary hover:bg-white/90"
+            className="bg-[#0A5C36] text-white hover:bg-white hover:text-[#0A5C36] border border-[#0A5C36] rounded-full px-8 py-6 text-lg shadow-md transition"
           >
             Schedule Your Cleanout
           </Button>

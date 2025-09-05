@@ -30,9 +30,7 @@ export default function Contact() {
     alert("Thank you for your message! We'll contact you soon.")
   }
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -47,8 +45,7 @@ export default function Contact() {
             Contact <span className="text-[#0A5C36]">Too Much Junk</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Need junk removal, furniture delivery, or yard waste cleanup?  
-            Reach out today and get a free estimate.
+            Need junk removal, furniture delivery, or yard waste cleanup? Reach out today and get a free estimate.
           </p>
         </div>
 
@@ -138,11 +135,7 @@ export default function Contact() {
                   />
                 </div>
 
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-[#14452f] hover:bg-[#0A5C36] text-white"
-                >
+                <Button type="submit" size="lg" className="w-full bg-[#14452f] hover:bg-[#0A5C36] text-white">
                   Get Free Estimate
                 </Button>
               </form>

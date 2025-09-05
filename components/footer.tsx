@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Image
-                src="/images/logo.png"
+                src="/images/twoguyslogo.jpg"
                 alt="Too Much Junk Logo"
                 width={120}
                 height={60}
@@ -27,8 +27,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/80 mb-6 max-w-md">
-              At <span className="font-semibold">Too Much Junk</span>, we make junk removal, furniture delivery, 
-              and yard waste disposal simple, affordable, and eco-friendly. Serving your community with care.
+              At <span className="font-semibold">Too Much Junk</span>, we make junk removal, furniture delivery, and
+              yard waste disposal simple, affordable, and eco-friendly. Serving your community with care.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
@@ -39,10 +39,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-[#14452f]" />
-                <a
-                  href="mailto:jg1187728@gmail.com"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
+                <a href="mailto:jg1187728@gmail.com" className="text-white/80 hover:text-white transition-colors">
                   jg1187728@gmail.com
                 </a>
               </div>
