@@ -118,13 +118,20 @@ export default function About() {
               <span className="text-[#14452f] font-bold"> Too Much Junk </span>
               is your trusted partner for a cleaner, clutter-free space.
             </p>
-            <Button
-              onClick={scrollToContact}
-              size="lg"
-              className="bg-gradient-to-r from-[#0A5C36] to-[#14452f] hover:from-[#14452f] hover:to-[#0A5C36] text-white text-xl px-12 py-6 rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 font-semibold"
-            >
-              Schedule Your Service Today
-            </Button>
+         <Button
+  onClick={scrollToContact}
+  size="lg"
+  className="bg-gradient-to-r from-[#0A5C36] to-[#14452f] 
+             hover:from-[#14452f] hover:to-[#0A5C36] 
+             text-white text-base sm:text-lg md:text-xl 
+             px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-6 
+             rounded-full shadow-xl hover:shadow-2xl 
+             transform hover:scale-105 
+             transition-all duration-300 font-semibold w-full sm:w-auto"
+>
+  Schedule Your Service Today
+</Button>
+
           </div>
         </div>
       </div>
