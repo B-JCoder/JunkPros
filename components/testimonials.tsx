@@ -65,11 +65,11 @@ export default function Testimonials() {
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            What Our <span className="text-[#0A5C36]">Customers Say</span>
+            What Our <span className="text-[#fff]">Customers Say</span>
           </h2>
           <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
             Don’t just take our word for it. Here’s what our satisfied customers throughout Carol Stream and surrounding
-            areas have to say about <span className="font-semibold text-[#0A5C36]">Too Much Junk</span>.
+            areas have to say about <span className="font-semibold text-[#000]">Too Much Junk</span>.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function Testimonials() {
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Join Our Happy Customers?</h3>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             Experience the same professional service and satisfaction that{" "}
-            <span className="font-semibold text-[#0A5C36]">Too Much Junk</span> customers rave about.
+            <span className="font-semibold text-[#000]">Too Much Junk</span> customers rave about.
           </p>
           <Button
             onClick={scrollToContact}
