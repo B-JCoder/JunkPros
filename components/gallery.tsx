@@ -45,33 +45,42 @@ export default function Gallery() {
   ]
 
   return (
-    <section id="gallery" className="py-16 md:py-24 bg-black">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="gallery"
+      className="relative py-20 md:py-28 bg-gradient-to-r from-primary/90 to-primary text-primary-foreground"
+    >
+      {/* Overlay Pattern */}
+      <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10 pointer-events-none" />
+
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance mb-6">
-            See Our Work in <span className="text-primary">Action</span>
+            See Our Work in <span className="text-white">Action</span>
           </h2>
-          <p className="text-lg md:text-xl text-white text-pretty max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
             Take a look at some of our recent junk removal projects. From small cleanouts to major property
             transformations, we deliver results that exceed expectations.
           </p>
         </div>
 
+        {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {galleryImages.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg bg-card hover:shadow-lg transition-shadow"
+              className="group relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur hover:shadow-xl transition-all"
             >
               <div className="aspect-[4/3] relative">
                 <Image
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-white text-center">
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center px-4">
                     <h3 className="text-lg font-semibold">{image.title}</h3>
                   </div>
                 </div>
@@ -80,16 +89,17 @@ export default function Gallery() {
           ))}
         </div>
 
+        {/* Call-to-action */}
         <div className="text-center">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Transform Your Space?</h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             Let us help you reclaim your space with our professional junk removal services. Contact us today for a free,
             no-obligation estimate.
           </p>
           <Button
             onClick={scrollToContact}
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground"
+            className="bg-white text-primary hover:bg-white/90"
           >
             Schedule Your Cleanout
           </Button>

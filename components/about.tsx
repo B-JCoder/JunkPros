@@ -13,74 +13,87 @@ export default function About() {
   }
 
   return (
-    <section id="about" className="py-16 md:py-24  bg-black">
+    <section id="about" className="py-16 md:py-24 bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance mb-6">
-            Why Choose <span className="text-primary">Junk Pros</span>?
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A5C36] mb-6">
+            Why Choose <span className="text-[#0A5C36]">Too Much Junk</span>?
           </h2>
-          <p className="text-lg md:text-xl text-white text-pretty max-w-3xl mx-auto">
-            We're Carol Stream's trusted junk removal experts, serving the community with professional, eco-friendly
-            waste removal services you can count on.
+          <p className="text-lg md:text-xl text-white max-w-3xl mx-auto">
+            At <span className="text-[#14452f] font-semibold">Too Much Junk</span>, 
+            we make junk removal, furniture delivery, and yard waste disposal easy, affordable, 
+            and eco-friendly. Our team is committed to providing fast, reliable service you can trust.
           </p>
         </div>
 
+        {/* Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Truck className="h-8 w-8 text-primary" />
+              <div className="bg-[#0A5C36]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Truck className="h-8 w-8 text-[#0A5C36]" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Professional Service</h3>
+              <h3 className="text-xl font-semibold mb-2">Reliable Service</h3>
               <p className="text-muted-foreground">
-                Licensed, insured, and experienced team with professional equipment
+                Professional junk removal and delivery done right, every time.
               </p>
             </CardContent>
           </Card>
 
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Recycle className="h-8 w-8 text-primary" />
+              <div className="bg-[#0A5C36]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Recycle className="h-8 w-8 text-[#0A5C36]" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Eco-Friendly</h3>
-              <p className="text-muted-foreground">We donate, recycle, and dispose of items responsibly</p>
+              <p className="text-muted-foreground">
+                We recycle, donate, and dispose of items responsibly to protect the planet.
+              </p>
             </CardContent>
           </Card>
 
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-primary" />
+              <div className="bg-[#0A5C36]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-8 w-8 text-[#0A5C36]" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Fast Response</h3>
-              <p className="text-muted-foreground">Same-day and next-day service available for urgent needs</p>
+              <p className="text-muted-foreground">
+                Same-day and next-day service available to fit your schedule.
+              </p>
             </CardContent>
           </Card>
 
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-8 w-8 text-primary" />
+              <div className="bg-[#0A5C36]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Shield className="h-8 w-8 text-[#0A5C36]" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Fully Insured</h3>
-              <p className="text-muted-foreground">Complete protection for your property and peace of mind</p>
+              <h3 className="text-xl font-semibold mb-2">Peace of Mind</h3>
+              <p className="text-muted-foreground">
+                Fully insured team ensuring safety, reliability, and satisfaction.
+              </p>
             </CardContent>
           </Card>
         </div>
 
+        {/* CTA */}
         <div className="bg-card rounded-lg p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Serving Carol Stream & 20-Mile Radius</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5C36]">
+            Serving Your Community with Care
+          </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            From residential garage cleanouts to commercial waste removal, we handle it all. Our local team knows the
-            area and provides personalized service to every customer.
+            From hauling away junk to delivering furniture and clearing yard waste, 
+            <span className="text-[#14452f] font-semibold"> Too Much Junk </span> 
+            is your trusted partner for a cleaner, clutter-free space.
           </p>
           <Button
             onClick={scrollToContact}
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground"
+            className="bg-[#0A5C36] hover:bg-[#14452f] text-white"
           >
-            Schedule Your Cleanout Today
+            Schedule Your Service Today
           </Button>
         </div>
       </div>

@@ -27,8 +27,8 @@ export default function Services() {
     },
     {
       icon: Sofa,
-      title: "Furniture Removal",
-      description: "Safe removal and disposal of old furniture, mattresses, and large household items.",
+      title: "Furniture Delivery & Removal",
+      description: "Safe delivery or removal of sofas, mattresses, and large household furniture.",
       features: ["Sofas & chairs", "Mattresses & beds", "Tables & desks", "Cabinets & dressers"],
     },
     {
@@ -45,47 +45,52 @@ export default function Services() {
     },
     {
       icon: Trash2,
-      title: "Construction Debris",
-      description: "Safe removal of construction waste, renovation debris, and building materials.",
-      features: ["Drywall & lumber", "Flooring materials", "Fixtures & fittings", "General debris"],
+      title: "Yard Waste Removal",
+      description: "Eco-friendly disposal of yard debris, landscaping waste, and storm cleanup.",
+      features: ["Branches & leaves", "Grass clippings", "Storm debris", "Outdoor junk"],
     },
   ]
 
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="py-20 md:py-28 bg-gradient-to-br from-[#0A5C36]/5 to-[#14452f]/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance mb-6">
-            Our <span className="text-primary">Services</span>
+            Our <span className="text-[#0A5C36]">Services</span>
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground text-pretty max-w-3xl mx-auto">
-            From single-item pickup to complete property cleanouts, we handle all types of junk removal with
-            professional care and eco-friendly disposal methods.
+          <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto">
+            From single-item pickup to complete property cleanouts, we handle junk removal, 
+            furniture delivery, and yard waste disposal with professional care.
           </p>
         </div>
 
+        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+            <Card
+              key={index}
+              className="rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
+            >
               <CardHeader>
-                <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                  <service.icon className="h-6 w-6 text-primary" />
+                <div className="bg-[#0A5C36]/10 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+                  <service.icon className="h-7 w-7 text-[#0A5C36]" />
                 </div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
+                <CardTitle className="text-xl font-bold text-[#14452f]">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
+                <p className="text-gray-600 mb-4">{service.description}</p>
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0" />
+                    <li key={featureIndex} className="flex items-center text-sm text-gray-700">
+                      <div className="w-2 h-2 bg-[#0A5C36] rounded-full mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
                 <Button
                   onClick={scrollToContact}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  className="w-full bg-[#0A5C36] hover:bg-[#14452f] text-white rounded-full shadow-md"
                 >
                   Get Quote
                 </Button>
@@ -94,16 +99,19 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="bg-primary/5 rounded-lg p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Don't See Your Item Listed?</h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+        {/* CTA Section */}
+        <div className="bg-[#0A5C36]/10 rounded-2xl p-10 md:p-14 text-center shadow-inner">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#14452f]">
+            Don’t See Your Item Listed?
+          </h3>
+          <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             We handle almost everything! Contact us for a free consultation about your specific junk removal needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="bg-[#0A5C36] hover:bg-[#14452f] text-white rounded-full shadow-md"
             >
               Get Free Quote
             </Button>
@@ -111,7 +119,7 @@ export default function Services() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+                className="border-[#0A5C36] text-[#0A5C36] hover:bg-[#0A5C36] hover:text-white rounded-full shadow-md"
               >
                 Call Now: (773) 430-1854
               </Button>
